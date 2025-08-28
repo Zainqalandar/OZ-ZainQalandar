@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px; 
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', sans-serif; 
+	background-color: #ffffff; 
+	color: #FFFFFF; 
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+main {
+	/* border: 3px solid green; */
+}
+
+
+
+
+

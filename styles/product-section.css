@@ -1,0 +1,149 @@
+.product-section {
+	max-width: 1440px;
+	margin: 0px auto;
+	background: #210e20;
+	padding: 0px 80px;
+	padding-bottom: 50px;
+	color: #FFFFFF;
+	font-family: sans-serif;
+	border: 0.5px solid #210e20;
+}
+
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section-header h2 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #210e20;
+}
+
+.section-header a {
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+
+.section-header a:hover {
+	opacity: 1;
+}
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/* gap: 24px; */
+
+	overflow-x: auto; 
+	scroll-snap-type: x mandatory;
+	padding-bottom: 10px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.product-grid::-webkit-scrollbar {
+	display: none;
+}
+
+.product-card {
+	background: #210e20;
+	border-radius: 12px;
+	padding: 8px;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+	flex: 0 0 auto; 
+	width: 322px; 
+}
+
+.image-wrapper {
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.image-wrapper img {
+	width: 100%;
+	height: 346px;
+	display: block;
+	border-radius: 12px;
+}
+
+.add-to-cart {
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #2F2F2F;
+	color: #FFFFFF;
+	border: none;
+	padding: 12px 24px;
+	border-radius: 6px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	cursor: pointer;
+	width: 90%;
+}
+
+/* .image-wrapper .add-to-cart {
+	opacity: 1;
+} */
+
+.image-wrapper:hover .add-to-cart {
+	opacity: 1;
+}
+
+.product-card h3 {
+	margin: 16px 0 8px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.product-card .price {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+	.product-section {
+		padding: 0px 40px;
+	}
+}
+@media (max-width: 768px) {
+	.section-header {
+		display: none;
+	}
+}
+@media (max-width: 425px) {
+	.product-section {
+		padding: 0px 33px;
+	}
+	.product-card {
+		padding: 4px;
+	}
+
+	.product-card {
+		width: 287px;
+	}
+
+	.image-wrapper img {
+		height: 311px;
+	}
+	.add-to-cart {
+		height: 34px;
+		padding: 9px 24px;
+	}
+}
+
+@media (max-width: 320px) {
+	.product-section {
+		padding: 0px 12px;
+	}
+}
+

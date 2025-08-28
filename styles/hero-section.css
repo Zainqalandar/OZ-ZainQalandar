@@ -1,6 +1,6 @@
 .hero-container {
 	position: relative;
-	background-image: url('/public/hero-banner/banner-image.png');
+	background-image: url('../public/hero-banner/banner-image.png');
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: cover;
